@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Alert</title>
+<meta name="description" content="Market Alert is a private publishing tool that posts short daily US-market summaries in Hebrew to its owner's own social accounts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700;800&family=Assistant:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  :root{
+    --bg:#F7F8FA; --panel:#FFFFFF; --fg:#12161C; --dim:#5B6672; --rule:#E2E6EC;
+    --acc:#E35A12; --acc-soft:rgba(227,90,18,.10);
+    --f-disp:"Frank Ruhl Libre",Georgia,serif;
+    --f-body:"Assistant",system-ui,-apple-system,sans-serif;
+    --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0B0E13; --panel:#12161D; --fg:#EDF1F5; --dim:#96A1AE; --rule:#232A33;
+      --acc:#FF7A2E; --acc-soft:rgba(255,122,46,.14);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0B0E13; --panel:#12161D; --fg:#EDF1F5; --dim:#96A1AE; --rule:#232A33;
+    --acc:#FF7A2E; --acc-soft:rgba(255,122,46,.14);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);
+    font-size:17px;line-height:1.6;padding:0 20px;padding-block:0 72px}
+  img{max-width:100%}
+  .wrap{max-width:66ch;margin:0 auto}
+  header{border-bottom:2px solid var(--fg);padding-block:56px 22px;margin-bottom:38px}
+  .eyeb{font-family:var(--f-mono);font-size:13px;font-weight:600;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--acc);margin:0 0 14px}
+  h1{font-family:var(--f-disp);font-weight:800;font-size:clamp(34px,6vw,46px);line-height:1.08;
+    letter-spacing:-.02em;margin:0;text-wrap:balance}
+  .stamp{font-family:var(--f-mono);font-size:13px;color:var(--dim);margin:16px 0 0;
+    letter-spacing:.04em}
+  .lede{font-size:19px;color:var(--dim);margin:0 0 40px}
+  section{margin-bottom:34px}
+  h2{font-family:var(--f-body);font-weight:700;font-size:20px;letter-spacing:-.01em;
+    margin:0 0 10px;display:flex;gap:14px;align-items:baseline}
+  h2 .n{font-family:var(--f-mono);font-weight:600;font-size:14px;color:var(--acc);
+    flex:0 0 auto;padding-top:2px}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px;padding-inline-start:22px}
+  li{margin-bottom:7px}
+  .note{background:var(--panel);border:1px solid var(--rule);border-inline-start:4px solid var(--acc);
+    padding:18px 20px;margin:0 0 34px}
+  .note p{margin:0;color:var(--dim);font-size:16px}
+  nav.docs{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 34px}
+  nav.docs a{display:block;flex:1 1 220px;background:var(--panel);border:1px solid var(--rule);
+    padding:18px 20px;text-decoration:none;color:var(--fg)}
+  nav.docs a:hover{border-color:var(--acc)}
+  nav.docs .t{font-weight:700;display:block;margin-bottom:4px}
+  nav.docs .d{font-size:15px;color:var(--dim)}
+  footer{border-top:1px solid var(--rule);padding-top:22px;margin-top:46px;
+    font-family:var(--f-mono);font-size:13px;color:var(--dim);letter-spacing:.04em}
+  footer a{color:var(--dim)}
+  a{color:var(--acc)}
+  a:focus-visible,nav.docs a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyeb">Market Alert · @marketalert.il</p>
+    <h1>Market Alert</h1>
+    <p class="stamp">A private publishing tool for one set of social accounts</p>
+  </header>
+
+  <p class="lede">Market Alert reads a public Hebrew-language news channel about the US
+  markets, composes a short summary as images or video, and publishes it on a schedule to
+  the accounts its owner operates.</p>
+
+  <div class="note">
+    <p>There is no sign-up and no public service. The software has one operator and posts
+    only to accounts that operator owns. This site exists to publish the policies that the
+    platforms we post through require developers to make available.</p>
+  </div>
+
+  <nav class="docs">
+    <a href="./terms.html"><span class="t">Terms of Service</span>
+      <span class="d">What the tool does, who may use it, and the limits on what it publishes.</span></a>
+    <a href="./privacy.html"><span class="t">Privacy Policy</span>
+      <span class="d">What is collected (nothing from third parties), what is held, and for how long.</span></a>
+  </nav>
+
+  <section>
+    <h2><span class="n">·</span> What it publishes</h2>
+    <p>Short daily posts in Hebrew about the US stock market: what moved, why it is being
+    reported that way, and — when an earlier post called something that later happened —
+    the outcome, computed from daily closing prices and stated on the post itself.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">·</span> Not investment advice</h2>
+    <p>Nothing published is investment advice, a recommendation, or an offer to buy or sell
+    any security. Market data may be delayed, incomplete or wrong.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">·</span> Contact</h2>
+    <p>Message <a href="https://www.instagram.com/marketalert.il/">@marketalert.il</a> on
+    Instagram.</p>
+  </section>
+
+  <footer>Market Alert · operated privately · @marketalert.il</footer>
+</div>
+</body>
+</html>

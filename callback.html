@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Alert — Authorisation</title>
+<meta name="description" content="OAuth redirect target for the Market Alert publishing tool.">
+<style>
+  :root{--bg:#F7F8FA;--fg:#12161C;--dim:#5B6672;--acc:#E35A12}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B0E13;--fg:#EDF1F5;--dim:#96A1AE;--acc:#FF7A2E}}
+  :root[data-theme="dark"]{--bg:#0B0E13;--fg:#EDF1F5;--dim:#96A1AE;--acc:#FF7A2E}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);padding:0 20px;padding-block:96px 72px;
+    font:400 17px/1.6 "Assistant",system-ui,-apple-system,sans-serif}
+  .wrap{max-width:52ch;margin:0 auto}
+  .eyeb{font:600 13px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--acc);margin:0 0 14px}
+  h1{font:800 32px/1.15 Georgia,serif;letter-spacing:-.02em;margin:0 0 14px;text-wrap:balance}
+  p{margin:0 0 12px;color:var(--dim)}
+  a{color:var(--acc)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyeb">Market Alert · @marketalert.il</p>
+  <h1>Authorisation complete</h1>
+  <p>This page is the redirect target used when the Market Alert publishing tool is
+  authorised against its owner's own social account. Nothing is stored here and nothing is
+  shown to anyone else.</p>
+  <p>You can close this window. <a href="./">About Market Alert</a></p>
+</div>
+</body>
+</html>
